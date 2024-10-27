@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaduan Kekerasan - Laporkan</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="canvasutama">
+        <div class="nav-pane">
+            <img src="../assets/logo_biru.png" alt="Logo" class="logo">
+            <div class="nav-buttons">
+                <div class="nav-button" id="dashboard" onclick="location.href='index.html'">
+                    <img src="../assets/non-active/Vector-1.svg" class="icon" alt="Dashboard Icon">
+                    <span class="nav-text">Dashboard</span>
+                </div>
+                <div class="nav-button active" id="laporkan" onclick="location.href='laporkan.html'">
+                    <img src="../assets/active/Vector-2.svg" class="icon" alt="Laporkan Icon">
+                    <span class="nav-text">Laporkan</span>
+                </div>
+                <div class="nav-button" id="riwayat" onclick="location.href='riwayat.html'">
+                    <img src="../assets/non-active/Vector-3.svg" class="icon" alt="Riwayat Icon">
+                    <span class="nav-text">Riwayat Laporan</span>
+                </div>
+                <div class="nav-button" id="profil" onclick="location.href='profil.html'">
+                    <img src="../assets/non-active/Vector-4.svg" class="icon" alt="Profil Icon">
+                    <span class="nav-text">Profil</span>
+                </div>
+                <div class="nav-button" id="keluar" onclick="location.href='keluar.html'">
+                    <img src="../assets/non-active/Vector-5.svg" class="icon" alt="Keluar Icon">
+                    <span class="nav-text">Keluar</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="teks1">Hai Javier Ihsan!</div>
+            <div class="teks2">Laporkan Kekerasan</div>
+
+            <!-- Elemen tambahan dari header -->
+            <div class="text-id">ID</div>
+            <img src="../assets/CaretRight.svg" alt="Caret Icon" class="icon-panah">
+            <img src="../assets/Bell.svg" alt="Notification Icon" class="icon-notification">
+            <img src="../assets/avatarjv.png" alt="User Avatar" class="user-avatar">
+            <span class="user-name">Javier Ihsan</span>
+
+            <div class="teks-pertanyaan">Sebutkan nama pelapor?</div>
+            <div class="opsi">
+                <div class="opsi-item" data-value="iya">
+                    <img src="../assets/button/tidakdipilih.svg" alt="Button Iya" class="button-opsi" id="button-iya">
+                    <span class="opsi-text">Iya</span>
+                </div>
+                <div class="opsi-item" data-value="tidak">
+                    <img src="../assets/button/tidakdipilih.svg" alt="Button Tidak" class="button-opsi" id="button-tidak">
+                    <span class="opsi-text">Tidak</span>
+                </div>
+            </div>
+
+            <div class="teks-jenis-laporan">Jenis Laporan Kekerasan</div>
+            <div class="opsi-jenis">
+                <div class="opsi-item" data-value="seksual">
+                    <img src="../assets/button/tidakdipilih.svg" alt="Button Seksual" class="button-opsi" id="button-seksual">
+                    <span class="opsi-text">Seksual</span>
+                </div>
+                <div class="opsi-item" data-value="fisik">
+                    <img src="../assets/button/tidakdipilih.svg" alt="Button Fisik" class="button-opsi" id="button-fisik">
+                    <span class="opsi-text">Fisik</span>
+                </div>
+                <div class="opsi-item" data-value="verbal">
+                    <img src="../assets/button/tidakdipilih.svg" alt="Button Verbal" class="button-opsi" id="button-verbal">
+                    <span class="opsi-text">Verbal</span>
+                </div>
+            </div>
+
+            <div class="teks-isi-laporan">Isi Laporan</div>
+            <textarea class="isi-laporan" placeholder="Ketikkan isi laporan"></textarea>
+            
+            <button class="upload-button" id="upload-button">Tambahkan Berkas Bukti (opsional)</button>
+            <input type="file" class="upload-input" id="file-upload" style="display: none;">
+            
+            <button class="reset-button" onclick="location.reload()">Reset</button>
+            <button class="submit-button" id="submit-laporan">Submit</button>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

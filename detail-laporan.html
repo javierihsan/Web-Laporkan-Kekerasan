@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaduan Kekerasan - Detail Laporan</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="canvasutama">
+        <div class="nav-pane">
+            <img src="../assets/logo_biru.png" alt="Logo" class="logo">
+            <div class="nav-buttons">
+                <div class="nav-button" id="dashboard" onclick="location.href='index.html'">
+                    <img src="../assets/non-active/Vector-1.svg" class="icon" alt="Dashboard Icon">
+                    <span class="nav-text">Dashboard</span>
+                </div>
+                <div class="nav-button" id="laporkan" onclick="location.href='laporkan.html'">
+                    <img src="../assets/non-active/Vector-2.svg" class="icon" alt="Laporkan Icon">
+                    <span class="nav-text">Laporkan</span>
+                </div>
+                <div class="nav-button active" id="riwayat" onclick="location.href='riwayat.html'">
+                    <img src="../assets/active/Vector-3.svg" class="icon" alt="Riwayat Icon">
+                    <span class="nav-text">Riwayat Laporan</span>
+                </div>
+                <div class="nav-button" id="profil" onclick="location.href='profil.html'">
+                    <img src="../assets/non-active/Vector-4.svg" class="icon" alt="Profil Icon">
+                    <span class="nav-text">Profil</span>
+                </div>
+                <div class="nav-button" id="keluar" onclick="location.href='keluar.html'">
+                    <img src="../assets/non-active/Vector-5.svg" class="icon" alt="Keluar Icon">
+                    <span class="nav-text">Keluar</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="teks1">Hai Javier Ihsan!</div>
+            <div class="teks2">Detail Laporan</div>
+
+            <!-- Elemen tambahan dari header -->
+            <div class="text-id">ID</div>
+            <img src="../assets/CaretRight.svg" alt="Caret Icon" class="icon-panah">
+            <img src="../assets/Bell.svg" alt="Notification Icon" class="icon-notification">
+            <img src="../assets/avatarjv.png" alt="User Avatar" class="user-avatar">
+            <span class="user-name">Javier Ihsan</span>
+
+            <!-- Container laporan terpilih -->
+            <div class="laporan-list" style="left: 42px; top: 209px;">
+                <div class="laporan-container" id="selected-laporan">
+                    <div class="laporan-icon-bg"></div>
+                    <div class="laporan-line"></div>
+                    <img src="../assets/id.svg" alt="ID Icon" class="laporan-id-icon">
+                    <span class="laporan-id-text" id="laporan-id"></span>
+                    <img src="../assets/UserCircle.svg" alt="User Icon" class="laporan-user-icon">
+                    <span class="laporan-user-text" id="laporan-nama"></span>
+                    <span class="laporan-jenis-text" id="laporan-jenis"></span>
+                    <span class="laporan-dokumen-link" id="laporan-dokumen">Lihat Dokumen</span>
+                </div>
+            </div>
+
+            <!-- Teks "Isi Laporan" -->
+            <div class="teks-isi-laporan" style="left: 42px; top: 337px;">Isi Laporan</div>
+            
+           <!-- Area untuk menampilkan isi laporan -->
+           <div class="isi-laporan-frame" style="width: 1004px; height: 302px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; top: 385px; left: 42px; position: absolute; padding: 15px;">
+                <p class="isi-laporan-text" style="font-family: 'Inter', sans-serif; font-size: 16px; color: #000; margin: 0;">
+                    <!-- Isi laporan yang dipilih akan dimuat di sini menggunakan JavaScript -->
+                </p>
+            </div>
+
+            <!-- Button "Kembali" -->
+            <button class="kembali-button" style="width: 215px; height: 41px; background-color: #4477A0; border-radius: 8px; color: #FFF; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; border: none; position: absolute; top: 726px; left: 42px; cursor: pointer;">
+                Kembali
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/detail-laporan.js"></script>
+</body>
+</html>
